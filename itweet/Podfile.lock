@@ -1,3 +1,18 @@
-PODFILE CHECKSUM: 8badbd4bcc0b4ecccb523f700f31a3866e19086f
+PODS:
+  - Alamofire (4.7.0)
+  - SnapKit (4.0.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.0)
+  - SnapKit (~> 4.0.0)
+  - SVProgressHUD (~> 2.2.5)
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 11f3175a978585ae8b980a90158c589dfc9183ed
 
 COCOAPODS: 1.4.0
