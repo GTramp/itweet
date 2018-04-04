@@ -12,9 +12,12 @@
 		C7FD56BD2074D0B600534E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FD56BB2074D0B600534E23 /* Main.storyboard */; };
 		C7FD56BF2074D0B700534E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FD56BE2074D0B700534E23 /* Assets.xcassets */; };
 		C7FD56C22074D0B800534E23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FD56C02074D0B700534E23 /* LaunchScreen.storyboard */; };
+		E078B2C12BEAB193F07E0EF4 /* Pods_itweet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4952B122AA81F143654E88 /* Pods_itweet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C4952B122AA81F143654E88 /* Pods_itweet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_itweet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C210526F1204965EBD02E65C /* Pods-itweet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itweet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-itweet/Pods-itweet.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FD56B42074D0B600534E23 /* itweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FD56B72074D0B600534E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7FD56B92074D0B600534E23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C7FD56BE2074D0B700534E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7FD56C12074D0B700534E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7FD56C32074D0B800534E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E0F5D8CC058474DF596A67 /* Pods-itweet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itweet.release.xcconfig"; path = "Pods/Target Support Files/Pods-itweet/Pods-itweet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E078B2C12BEAB193F07E0EF4 /* Pods_itweet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		909C5045882C1BB5D078B317 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C210526F1204965EBD02E65C /* Pods-itweet.debug.xcconfig */,
+				F0E0F5D8CC058474DF596A67 /* Pods-itweet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ACD7D10CEDBAD906FB9DCF69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C4952B122AA81F143654E88 /* Pods_itweet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7FD56AB2074D0B600534E23 = {
 			isa = PBXGroup;
 			children = (
 				C7FD56B62074D0B600534E23 /* itweet */,
 				C7FD56B52074D0B600534E23 /* Products */,
+				909C5045882C1BB5D078B317 /* Pods */,
+				ACD7D10CEDBAD906FB9DCF69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7FD56C62074D0B800534E23 /* Build configuration list for PBXNativeTarget "itweet" */;
 			buildPhases = (
+				24FF6206A5E9F07541198759 /* [CP] Check Pods Manifest.lock */,
 				C7FD56B02074D0B600534E23 /* Sources */,
 				C7FD56B12074D0B600534E23 /* Frameworks */,
 				C7FD56B22074D0B600534E23 /* Resources */,
+				74EE43ED9EBE67716C035B5B /* [CP] Embed Pods Frameworks */,
+				B2CBAE63F8C37BAF3EC56D23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24FF6206A5E9F07541198759 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-itweet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74EE43ED9EBE67716C035B5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-itweet/Pods-itweet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2CBAE63F8C37BAF3EC56D23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-itweet/Pods-itweet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7FD56B02074D0B600534E23 /* Sources */ = {
@@ -278,16 +356,14 @@
 		};
 		C7FD56C72074D0B800534E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C210526F1204965EBD02E65C /* Pods-itweet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W77EGW7S3;
 				INFOPLIST_FILE = itweet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tramp.itweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -297,16 +373,14 @@
 		};
 		C7FD56C82074D0B800534E23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E0F5D8CC058474DF596A67 /* Pods-itweet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W77EGW7S3;
 				INFOPLIST_FILE = itweet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tramp.itweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
