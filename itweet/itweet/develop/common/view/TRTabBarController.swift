@@ -14,6 +14,18 @@ class TRTabBarController: UITabBarController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        // 1. init Ui
+        initUi()
     }
     
+}
+
+extension TRTabBarController {
+    
+    /// init ui
+    private func initUi(){
+        // 1. 背景色
+        view.backgroundColor = UIColor.white
+    }
 }
