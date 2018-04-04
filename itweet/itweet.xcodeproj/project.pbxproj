@@ -12,6 +12,17 @@
 		C7FD56BD2074D0B600534E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FD56BB2074D0B600534E23 /* Main.storyboard */; };
 		C7FD56BF2074D0B700534E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FD56BE2074D0B700534E23 /* Assets.xcassets */; };
 		C7FD56C22074D0B800534E23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FD56C02074D0B700534E23 /* LaunchScreen.storyboard */; };
+		C7FD56D62074D6E400534E23 /* TRTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56D52074D6E400534E23 /* TRTabBarController.swift */; };
+		C7FD56D82074D70400534E23 /* TRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56D72074D70400534E23 /* TRViewController.swift */; };
+		C7FD56DA2074D71800534E23 /* TRNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56D92074D71800534E23 /* TRNavigationController.swift */; };
+		C7FD56DC2074D77C00534E23 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56DB2074D77C00534E23 /* MainController.swift */; };
+		C7FD56F02074F28F00534E23 /* TweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56EF2074F28F00534E23 /* TweetController.swift */; };
+		C7FD56F22074F2A100534E23 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56F12074F2A100534E23 /* MessageController.swift */; };
+		C7FD56F42074F2B100534E23 /* ComposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56F32074F2B100534E23 /* ComposeController.swift */; };
+		C7FD56F72074F2CD00534E23 /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56F62074F2CD00534E23 /* DiscoverController.swift */; };
+		C7FD56F92074F2DE00534E23 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56F82074F2DE00534E23 /* ProfileController.swift */; };
+		C7FD56FB2074F2F700534E23 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56FA2074F2F700534E23 /* AppDelegate+Extension.swift */; };
+		C7FD56FE2074F3BE00534E23 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56FD2074F3BE00534E23 /* UIScreen+Extension.swift */; };
 		E078B2C12BEAB193F07E0EF4 /* Pods_itweet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4952B122AA81F143654E88 /* Pods_itweet.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +36,17 @@
 		C7FD56BE2074D0B700534E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7FD56C12074D0B700534E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7FD56C32074D0B800534E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7FD56D52074D6E400534E23 /* TRTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRTabBarController.swift; sourceTree = "<group>"; };
+		C7FD56D72074D70400534E23 /* TRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRViewController.swift; sourceTree = "<group>"; };
+		C7FD56D92074D71800534E23 /* TRNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRNavigationController.swift; sourceTree = "<group>"; };
+		C7FD56DB2074D77C00534E23 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		C7FD56EF2074F28F00534E23 /* TweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetController.swift; sourceTree = "<group>"; };
+		C7FD56F12074F2A100534E23 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		C7FD56F32074F2B100534E23 /* ComposeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeController.swift; sourceTree = "<group>"; };
+		C7FD56F62074F2CD00534E23 /* DiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
+		C7FD56F82074F2DE00534E23 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		C7FD56FA2074F2F700534E23 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
+		C7FD56FD2074F3BE00534E23 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		F0E0F5D8CC058474DF596A67 /* Pods-itweet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itweet.release.xcconfig"; path = "Pods/Target Support Files/Pods-itweet/Pods-itweet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +100,9 @@
 		C7FD56B62074D0B600534E23 /* itweet */ = {
 			isa = PBXGroup;
 			children = (
+				C7FD56C92074D67800534E23 /* develop */,
 				C7FD56B72074D0B600534E23 /* AppDelegate.swift */,
+				C7FD56FA2074F2F700534E23 /* AppDelegate+Extension.swift */,
 				C7FD56B92074D0B600534E23 /* ViewController.swift */,
 				C7FD56BB2074D0B600534E23 /* Main.storyboard */,
 				C7FD56BE2074D0B700534E23 /* Assets.xcassets */,
@@ -86,6 +110,263 @@
 				C7FD56C32074D0B800534E23 /* Info.plist */,
 			);
 			path = itweet;
+			sourceTree = "<group>";
+		};
+		C7FD56C92074D67800534E23 /* develop */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56D12074D67900534E23 /* lib */,
+				C7FD56D22074D67900534E23 /* tool */,
+				C7FD56CA2074D67800534E23 /* common */,
+				C7FD56CB2074D67800534E23 /* class */,
+			);
+			path = develop;
+			sourceTree = "<group>";
+		};
+		C7FD56CA2074D67800534E23 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56D42074D6B500534E23 /* view */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		C7FD56CB2074D67800534E23 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56D32074D69900534E23 /* main */,
+				C7FD56CC2074D67800534E23 /* tweet */,
+				C7FD56CF2074D67900534E23 /* message */,
+				C7FD56CE2074D67900534E23 /* compose */,
+				C7FD56CD2074D67800534E23 /* discover */,
+				C7FD56D02074D67900534E23 /* profile */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		C7FD56CC2074D67800534E23 /* tweet */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56E02074DD7A00534E23 /* view */,
+				C7FD56E22074DEBA00534E23 /* viewmodel */,
+				C7FD56E12074DEB200534E23 /* model */,
+			);
+			path = tweet;
+			sourceTree = "<group>";
+		};
+		C7FD56CD2074D67800534E23 /* discover */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56F52074F2BD00534E23 /* view */,
+				C7FD56E82074DF4700534E23 /* model */,
+				C7FD56E72074DF2700534E23 /* viewmodel */,
+			);
+			path = discover;
+			sourceTree = "<group>";
+		};
+		C7FD56CE2074D67900534E23 /* compose */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56E92074DF5D00534E23 /* view */,
+				C7FD56EB2074DF6D00534E23 /* model */,
+				C7FD56EA2074DF6400534E23 /* viewmodel */,
+			);
+			path = compose;
+			sourceTree = "<group>";
+		};
+		C7FD56CF2074D67900534E23 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56E32074DEF700534E23 /* view */,
+				C7FD56E52074DF0900534E23 /* model */,
+				C7FD56E42074DEFE00534E23 /* viewmodel */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		C7FD56D02074D67900534E23 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56EC2074DF7300534E23 /* view */,
+				C7FD56EE2074DF9900534E23 /* model */,
+				C7FD56ED2074DF7900534E23 /* viewmodel */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		C7FD56D12074D67900534E23 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		C7FD56D22074D67900534E23 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56FC2074F3A400534E23 /* extension */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		C7FD56D32074D69900534E23 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56DD2074DD3B00534E23 /* view */,
+				C7FD56DE2074DD4700534E23 /* viewmodel */,
+				C7FD56DF2074DD5500534E23 /* model */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		C7FD56D42074D6B500534E23 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56D52074D6E400534E23 /* TRTabBarController.swift */,
+				C7FD56D72074D70400534E23 /* TRViewController.swift */,
+				C7FD56D92074D71800534E23 /* TRNavigationController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C7FD56DD2074DD3B00534E23 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56DB2074D77C00534E23 /* MainController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C7FD56DE2074DD4700534E23 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		C7FD56DF2074DD5500534E23 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C7FD56E02074DD7A00534E23 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56EF2074F28F00534E23 /* TweetController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C7FD56E12074DEB200534E23 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C7FD56E22074DEBA00534E23 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		C7FD56E32074DEF700534E23 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56F12074F2A100534E23 /* MessageController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C7FD56E42074DEFE00534E23 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		C7FD56E52074DF0900534E23 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C7FD56E72074DF2700534E23 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		C7FD56E82074DF4700534E23 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C7FD56E92074DF5D00534E23 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56F32074F2B100534E23 /* ComposeController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C7FD56EA2074DF6400534E23 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		C7FD56EB2074DF6D00534E23 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C7FD56EC2074DF7300534E23 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56F82074F2DE00534E23 /* ProfileController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C7FD56ED2074DF7900534E23 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		C7FD56EE2074DF9900534E23 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C7FD56F52074F2BD00534E23 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56F62074F2CD00534E23 /* DiscoverController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C7FD56FC2074F3A400534E23 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD56FD2074F3BE00534E23 /* UIScreen+Extension.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +501,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FD56F72074F2CD00534E23 /* DiscoverController.swift in Sources */,
 				C7FD56BA2074D0B600534E23 /* ViewController.swift in Sources */,
+				C7FD56FB2074F2F700534E23 /* AppDelegate+Extension.swift in Sources */,
+				C7FD56D62074D6E400534E23 /* TRTabBarController.swift in Sources */,
+				C7FD56F02074F28F00534E23 /* TweetController.swift in Sources */,
+				C7FD56F22074F2A100534E23 /* MessageController.swift in Sources */,
+				C7FD56DA2074D71800534E23 /* TRNavigationController.swift in Sources */,
+				C7FD56F42074F2B100534E23 /* ComposeController.swift in Sources */,
+				C7FD56F92074F2DE00534E23 /* ProfileController.swift in Sources */,
+				C7FD56D82074D70400534E23 /* TRViewController.swift in Sources */,
+				C7FD56DC2074D77C00534E23 /* MainController.swift in Sources */,
 				C7FD56B82074D0B600534E23 /* AppDelegate.swift in Sources */,
+				C7FD56FE2074F3BE00534E23 /* UIScreen+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +662,10 @@
 				DEVELOPMENT_TEAM = 6W77EGW7S3;
 				INFOPLIST_FILE = itweet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tramp.itweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -387,7 +682,10 @@
 				DEVELOPMENT_TEAM = 6W77EGW7S3;
 				INFOPLIST_FILE = itweet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tramp.itweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
