@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7B6A2E320750F2700162D3A /* SVProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6A2E220750F2700162D3A /* SVProgressHUD+Extension.swift */; };
 		C7FD56B82074D0B600534E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56B72074D0B600534E23 /* AppDelegate.swift */; };
 		C7FD56BA2074D0B600534E23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD56B92074D0B600534E23 /* ViewController.swift */; };
 		C7FD56BD2074D0B600534E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FD56BB2074D0B600534E23 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		0C4952B122AA81F143654E88 /* Pods_itweet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_itweet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C210526F1204965EBD02E65C /* Pods-itweet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itweet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-itweet/Pods-itweet.debug.xcconfig"; sourceTree = "<group>"; };
+		C7B6A2E220750F2700162D3A /* SVProgressHUD+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+Extension.swift"; sourceTree = "<group>"; };
 		C7FD56B42074D0B600534E23 /* itweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FD56B72074D0B600534E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7FD56B92074D0B600534E23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				C7FD56FD2074F3BE00534E23 /* UIScreen+Extension.swift */,
+				C7B6A2E220750F2700162D3A /* SVProgressHUD+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				C7FD56FB2074F2F700534E23 /* AppDelegate+Extension.swift in Sources */,
 				C7FD56D62074D6E400534E23 /* TRTabBarController.swift in Sources */,
 				C7FD56F02074F28F00534E23 /* TweetController.swift in Sources */,
+				C7B6A2E320750F2700162D3A /* SVProgressHUD+Extension.swift in Sources */,
 				C7FD56F22074F2A100534E23 /* MessageController.swift in Sources */,
 				C7FD56DA2074D71800534E23 /* TRNavigationController.swift in Sources */,
 				C7FD56F42074F2B100534E23 /* ComposeController.swift in Sources */,
@@ -658,6 +662,7 @@
 			baseConfigurationReference = C210526F1204965EBD02E65C /* Pods-itweet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W77EGW7S3;
 				INFOPLIST_FILE = itweet/Info.plist;
@@ -678,6 +683,7 @@
 			baseConfigurationReference = F0E0F5D8CC058474DF596A67 /* Pods-itweet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W77EGW7S3;
 				INFOPLIST_FILE = itweet/Info.plist;
