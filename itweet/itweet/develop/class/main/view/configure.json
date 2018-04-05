@@ -1,0 +1,27 @@
+ [
+  {
+  "title": "微博",
+  "image":"tabbar_home",
+  "message": "",
+  "class": "TweetController"
+  },
+  {
+  "title": "消息",
+  "image":"tabbar_message_center",
+  "message": "登录后，别人评论你的微博，给你发消息，都会在这里收到通知",
+  "class": "MessageController"
+  },
+  {},
+  {
+  "title": "发现",
+  "image":"tabbar_discover",
+  "message": "",
+  "class": "DiscoverController"
+  },
+  {
+  "title": "我",
+  "image":"tabbar_profile",
+  "message": "登录后，你的微博、相册、个人资料会显示在这里，展示给他人",
+  "class": "ProfileController"
+  },
+  ]
