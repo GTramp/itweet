@@ -87,12 +87,14 @@ extension LoginController: UIWebViewDelegate {
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         
         if let url = request.url, url.host == "www.baidu.com",
-            let query = url.query, query.contains("code=") {
+            let query = url.query, query.contains("code="),
+            let code = query.url(name: "code"){
             // 1. 结束动画
             SVProgressHUD.dismiss()
-            // 2. 获取参数 code
-            let code = query.url(name: "code")
-            print(tramp: code)
+            // 2. 获取token
+            LoginViewModel.shared.loadAccessToken(code: code) { (isSucceed) in
+                print(tramp: isSucceed)
+            }
             return false
         } else {
             return true

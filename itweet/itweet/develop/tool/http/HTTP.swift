@@ -41,7 +41,7 @@ class HTTP {
                           parameters: params,
                           encoding: URLEncoding.default,
                           headers: nil).responseJSON { (dataResponse) in
-                            dataResponse.result.isSuccess ? completionHandler(true,dataResponse.data) : completionHandler(false, nil)
+                            dataResponse.result.isSuccess ? completionHandler(true,dataResponse.value) : completionHandler(false, nil)
         }
     }
 }

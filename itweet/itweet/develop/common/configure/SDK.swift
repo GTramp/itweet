@@ -28,4 +28,4 @@ let TR_SINA_FORCELOGIN = false
 /// language
 let TR_SINA_LANGUAGE = "zh"
 /// oauth2/authorize
-let TR_SINA_AUTHORIZE = "https://api.weibo.com/oauth2/authorize?client_id=\(TR_SINA_CLIENT_ID)&redirect_uri=\(TR_SINA_REDIRECT_URI)&response_type=code"
+let TR_SINA_AUTHORIZE = "https://api.weibo.com/oauth2/authorize?client_id=\(TR_SINA_CLIENT_ID)&redirect_uri=\(TR_SINA_REDIRECT_URI)&response_type=code&state=\(TR_SINA_STATE)"

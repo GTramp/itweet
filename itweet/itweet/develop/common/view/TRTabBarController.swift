@@ -21,8 +21,9 @@ class TRTabBarController: UITabBarController {
     
 }
 
+// MARK: - 初始化 -
 extension TRTabBarController {
-    
+
     /// init ui
     private func initUi(){
         // 1. 背景色

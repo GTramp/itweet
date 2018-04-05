@@ -7,3 +7,5 @@
 //
 
 import Foundation
+
+let TR_SINA_ACCESS_TOKEN_URI = "https://api.weibo.com/oauth2/access_token"
