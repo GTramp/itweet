@@ -88,7 +88,11 @@ extension LoginController: UIWebViewDelegate {
         
         if let url = request.url, url.host == "www.baidu.com",
             let query = url.query, query.contains("code=") {
-            query.url(name: "code")
+            // 1. 结束动画
+            SVProgressHUD.dismiss()
+            // 2. 获取参数 code
+            let code = query.url(name: "code")
+            print(tramp: code)
             return false
         } else {
             return true
