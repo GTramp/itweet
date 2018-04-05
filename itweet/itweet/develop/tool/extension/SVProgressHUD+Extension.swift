@@ -96,4 +96,21 @@ extension SVProgressHUD {
     class func show(info: String) {
         showInfo(withStatus: info)
     }
+    
+    /// 展示状态
+    ///
+    /// - Parameters:
+    ///   - status: 状态信息
+    ///   - duration: 展示周期
+    class func show(status: String, duration: TimeInterval) {
+        show(status: status)
+        dismiss(delay: duration)
+    }
+    
+    /// 展示状态
+    ///
+    /// - Parameter status: 状态信息
+    class func show(status: String) {
+        show(withStatus: status)
+    }
 }

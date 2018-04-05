@@ -33,7 +33,13 @@ extension AppDelegate {
     ///
     /// - Returns: 根控制器
     private func rootController()-> UIViewController {
-        let rootController = LoginViewModel.shared.isLogan ? MainController.init() : LoginController.init()
+        // 1. 登录控制器
+        let loginController = TRNavigationController.init(rootViewController: LoginController.init())
+        // 2. 主控制器
+        let mainController = MainController.init()
+        // 3. 判断
+        let rootController = LoginViewModel.shared.isLogan ? mainController : loginController
+        // 4. 返回
         return rootController
     }
 }
