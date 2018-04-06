@@ -18,6 +18,26 @@ class MainController: TRTabBarController {
         configure()
     }
     
+    // MARK: - 懒加载属性 -
+    /// 撰写按钮
+    lazy var composeBtn = UIButton.init(normalImage: UIImage.init(named: "tabbar_compose_icon_add"),
+                                        highlightedImage: UIImage.init(named: "tabbar_compose_icon_add_highlighted"),
+                                        normalBackground: UIImage.init(named: "tabbar_compose_button"),
+                                        highlightedBackground: UIImage.init(named: "tabbar_compose_button_highlighted"),
+                                        target: self,
+                                        action: nil)
+}
+
+// MARK: - UITabBarControllerDelegate
+extension MainController: UITabBarControllerDelegate {
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        // 1. 屏蔽 中间的item 点击
+        if viewController.isMember(of: UIViewController.self) {
+            return false
+        }
+        return true
+    }
 }
 
 // MARK: - 初始化
@@ -25,16 +45,23 @@ extension MainController {
     
     /// 配置
     private func configure(){
-        // 1. 获取json 文件
+        // 0. 设置代理
+        delegate = self
+        // 1. 添加子控制器
         guard let filePath = Bundle.filePath(name: "configure.json") ,
             let data = NSData.init(contentsOfFile: filePath) as Data?,
             let items = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as! Array<[String:String]>
             else { return  }
-        // 2. 遍历 数组
+        // 1.2 遍历 数组
         for item in items {
             let controller =  initChildController(dict: item)
             addChildViewController(controller)
         }
+        
+        // 2. 添加撰写按钮
+        let width = tabBar.bounds.width / CGFloat(childViewControllers.count)
+        tabBar.addSubview(composeBtn)
+        composeBtn.frame = tabBar.bounds.insetBy(dx: width * 2, dy: 0)
     }
     
     /// 初始化子控制器
@@ -46,7 +73,7 @@ extension MainController {
             let image = dict["image"],
             let cls = dict["class"],
             let _class = NSClassFromString("\(Bundle.main.nameSpace).\(cls)") as? TRViewController.Type
-            else {return TRViewController.init()}
+            else {return UIViewController.init()}
         // 2. 创建控制器
         let rootVC = _class.init()
         // 3. 预设
